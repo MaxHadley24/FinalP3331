@@ -1,0 +1,69 @@
+SCRUM Meeting 1 for Omicron
+Prepared by: Will Whatley
+Meeting Date: 4/12/2023
+
+Meeting Attendees
+ Max Hadley
+ Yash Dalal
+ Will Whatley
+ Shicong Chu
+
+Meeting Agenda Items
+Go around and ask 
+What did you do yesterday?
+What will you do today?
+Are there any roadblocks?   
+Go through current website and see what needs to be added as priority 
+Decide on ordering page user interface
+Brainstorm ways to implement inventory management and order history
+
+Status Update Since Last Meeting
+
+Accomplishments:
+Create page to allow manger/server login 
+Menu page creation 
+Continued integration of database in the backend to the frontend 
+Basic page navigation to go back and forth 
+
+Tasks Completed:
+Task Description
+Assigned to
+Completed? (yes/no)
+Create page to allow manager to view login page 
+Will Whatley
+yes
+Menu page creation
+Shicong Chu
+yes
+Continue integration  of database in the backend to the frontend
+Yash Dalal
+yes
+Page Navigation
+Max Hadley
+yes
+
+Before The Next Meeting
+Plans:
+Continue working on sprint two items  
+As you write code think of ways you can also test that code 
+Began commenting code as you go 
+Continued integration of backend and frontend 
+
+Task Assignments:
+Task Description
+Assigned to
+Ability to input customer orders
+Shicong Chu
+Ability to confirm and record all customer orders
+Shicong Chu
+Ability to restart the current order
+Max Hadley
+Ability to see menu items
+Yash Dalal
+Ability for server to input order 
+Max Hadley
+I can place an order and have it confirmed for pick-up
+Will Whatley
+
+Minutes from Previous Meeting
+Product manager asked everyone what they had done yesterday, what they would do today, and if there were any roadblocks. We then went through the app and looked at how we could improve it and identified areas that needed immediate or high priority attention. We then brainstormed ways and wireframes to decide how to design the ordering page user interface. We also began brainstorming ways to implement inventory management and order history. 

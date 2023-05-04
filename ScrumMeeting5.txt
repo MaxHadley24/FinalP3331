@@ -1,0 +1,61 @@
+SCRUM Meeting 5 for Omicron
+Prepared by: Will Whatley
+Meeting Date: 4/14/2023
+
+Meeting Attendees
+ Max Hadley
+ Yash Dalal
+ Will Whatley
+ Shicong Chu
+
+Meeting Agenda Items
+ Go around and ask 
+What did you do yesterday?
+What will you do today?
+Are there any impediments  
+Brainstorm ways to implement the Trends page user interface and sales report interface
+Began discussion how to implement google map API 
+
+Status Update Since Last Meeting
+Accomplishments:
+Creation of UI design for order page 
+Creation of web pages that can input order from both customer side and server side 
+
+Tasks Completed:
+Task Description
+Assigned to
+Completed? (yes/no)
+Ability for server to input order 
+Max Hadley
+yes
+Ability to input customer orders
+Shicong Chu
+yes
+
+Before The Next Meeting
+Plans:
+Continue working on sprint two items  
+As you write code think of ways you can also test that code 
+Began commenting code as you go 
+Continued integration of backend and frontend 
+Create google cloud computing account to generate google maps api key
+
+Task Assignments:
+Task Description
+Assigned to
+Ability to input customer orders
+Shicong Chu
+Ability to restart the current order
+Max Hadley
+Ability to see menu items
+Yash Dalal
+I can place an order and have it confirmed for pick-up
+Will Whatley
+Creation of google cloud computing account 
+Will Whatley
+
+Minutes from Previous Meeting
+Product manager asked everyone what they had done yesterday, what they would do today, and if there were any roadblocks. No one is facing any major roadblocks. We then brainstormed ways to implement the trends page user interface and the sales report interface. We finished by brainstorming more how to implement the google maps API. Use of CHATGPT here and found that we need to make a google cloud computing account to generate an API key. 
+
+
+

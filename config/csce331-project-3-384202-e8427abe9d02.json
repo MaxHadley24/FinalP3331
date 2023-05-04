@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "csce331-project-3-384202",
+  "private_key_id": "e8427abe9d025bf690360321eff81c12fa247b47",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDrYPVCIRjy+TsB\nJ5k3b8zwzUu6+4GG55G/2INniUBW4BCK7v2utUKLYc5+ytcey0Uu+su6bxS9Zpyk\ngFcN4o5IseEIKUUfjxR0pmWyvEeoDof6czKfXYSNQKdy6FEzqXSFNLcmD23T3avv\nILOx6vt+cC4Y98XJ4v+qKRqsf8PF/c0+QHbdJ1pEtH2q8GkHmllGlhxNGALg4tlg\niGw9z+q64GET1xOH1DrI7mbCtSO5hy3Q7vyCpIzhfO4MFW5iGJffKi5DtPIK8sgh\n9GolOfL7DR6q0AVu9WuF7dEyNA9gbTmPgzmIHuQCxm7C0s3JiqjlUT9bihbGfMg+\nlrrBfZhRAgMBAAECggEAK40PFCNHmH1g23/WK5m2E8AIiRpMBwgFwbdv6NJOY0Sm\nCu7ZZWAIZf281Vz2nK4DqQOiemZfMgQwa4eLk/gdV3oCJx5rucEhicvX+VA4+fFm\nW4LBFRealQAne21cyPBLrPHqCVLFgXP8ggxM81iFHAnpnZkKsaYcpAFi/BPPx2wp\nm7vRX1pjg3N2qmNCWi9n0UGUPEYPu+eO+4vPs9CyD1ksWOnnlzftVt/9b2zUOZLa\nOyoFlj+sq2ES4BIX946Qlamf3pwQODeXTyZpleEtUV1ahDzSwagHW9C+oTC0MWI7\nkrwakLAGN3sLoHE3nyBYKZMgSQ7Q0ZblA+4yiIjOIQKBgQD38vF8LSmDb1pp8FGi\ngulUP/21pmsAQxLZVlKqV1qwCZqvhTlFG27E9ipF2EG0C9EjWKOpsYyMmPH9rfd5\nKPqpxbT/UYolY1/6LOr/4ucKz7oxaebw5uyXBFcQQg6x6dbepYOGZ2VUhR0WOSQj\na3YtX59waTUaalOpJBr/BOpwTQKBgQDzBYaFk9VpxiF+z3rpiH8nYa8LHTC/L8BR\nCwmmYOWsMBXGyyjLfH5cOBLz9dh76jHCZPNbQXcyAAz7PLKq6t2pxv2+VNgxb4wP\nDMWsX+gDr/m2HlfwClGvpgaCaB3R9J1trtnMRragxUmvyDJ8QJvdkQaC5gWQ+kA0\nc3bo/AzqFQKBgB224bXN+8GioKU9hasCIVBVcuRIE16uqx2cuL9tRJMAM6eBQcHE\nbdvw3FQOfKFFIUUpJEP74SogUi/in1vHy3J5HR3T+chNRn1G0MrluGaVSm0Nkf2g\nzw2yGXT7VaOAsJ1yHHcJAR3F7hxxsKEGCd2aLhNcqF6IC4qjpxCU2DupAoGBAOlc\noPScJQ7RJ1DyQ4EFhbR3ZPMzMKAmZnJsOvP9kA5sjjy60Y21GlHLtsd1iFBVbzrQ\nXa9/icoFqnGGs7rUlc52OysNphyylLfO9/KylcUUsqFjOeZSwmX887s954S5dILi\nqFo0fSKc0Elv4KrYD9QPc0U3RJkW9ZhoWAMaJfyRAoGBAIj1dn+FnL1Q9gmmFKJQ\nbHq6yjh//XQV1kSN6SnCJYC/10aG/nCAcRlxhRycH+RHJMkUEE7DgIjVal6wdMcx\nezPP/bEzOiC4/J7v8jVbNwb9/m8XSqS3p+AOINMFiXbrFb/WWHkfrn7lWEGSype2\npVfo7+/N33V6QlefjzOcMoOo\n-----END PRIVATE KEY-----\n",
+  "client_email": "omicron-service-account@csce331-project-3-384202.iam.gserviceaccount.com",
+  "client_id": "116233602273208359293",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/omicron-service-account%40csce331-project-3-384202.iam.gserviceaccount.com"
+}

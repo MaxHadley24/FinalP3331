@@ -1,0 +1,77 @@
+SCRUM Meeting 6 for Omicron
+Prepared by: Will Whatley
+Meeting Date: 4/17/2023
+
+Meeting Attendees
+ Max Hadley
+ Yash Dalal
+ Will Whatley
+ Shicong Chu
+
+Meeting Agenda Items
+Go around and ask 
+What did you do yesterday?
+What will you do today?
+Are there any roadblocks?  
+Think of ways to implement the login for server and manager side and determine their privileges and what they see 
+Discussion of OAuth implementation
+Discussion of Google translate implementation
+Discussion of user tests to conduct for user study 
+
+Status Update Since Last Meeting
+Accomplishments:
+Will was able to create a google cloud account and generated an API key to use 
+Menu table was successfully loaded
+Customers are able to input their order and can restart their current order 
+On homepage, google maps api will show the location of the restaurant
+
+Tasks Completed:
+Task Description
+Assigned to
+Completed? (yes/no)
+Creation of google cloud computing account 
+Will Whatley
+yes
+Ability to see menu items
+Yash Dalal
+yes
+Ability to input customer orders
+Shicong Chu
+yes
+Ability to restart the current order
+Max Hadley
+yes
+Implementation of google maps API
+Will Whatley
+yes
+
+Before The Next Meeting
+Plans:
+Google OAuth implementation 
+Brainstorm ways to implement accessibility support for our personas
+Google translate for menu and ordering 
+Color scheme changer for colorblind 
+Make text bigger for people 
+Conduct user studies 
+Implementation of manager analysis pages 
+
+Task Assignments:
+Task Description
+Assigned to
+I can place an order and have it confirmed for pick-up
+Will Whatley
+Deployment of app
+Yash Dalal
+Google translate API implementation 
+Will Whatley
+Google OAuth Implementation 
+Will Whatley
+Color Scheme changer
+Max Hadley
+Font enlargement ability  
+Shicong Chu
+Implementation of manager analysis pages
+Yash Dalal
+
+Minutes from Previous Meeting
+Product manager asked everyone what they had done yesterday, what they would do today, and if there were any roadblocks. Will Whatley faced a major setback for placing an order and having it confirmed for pick-up. He ran into some package download errors for .ejs and js and was setback and was not able to fully complete the item. We then thought of ways on how to split up the manager and server side privileges and what they can view. Server can only view input order pages while the manager can only view the business-side related pages. We then discussed how to implement Google OAuth and Google Translate and found they may be a little bit trickier to set up then the Google Maps API. We finished with discussing the different tests that could be conducted for our MVP. 

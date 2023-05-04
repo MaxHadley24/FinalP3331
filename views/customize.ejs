@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <title>Spin'N Stone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  
+    <style>
+      body{
+        background-color: #198754;
+      }
+      
+      .HomeButton{
+        position: fixed;
+        background-color: rgba(240, 248, 255, 0.381);
+        width: 80px;
+        height: 60px;
+        margin-left: 15px;
+        border-radius: 10px;
+        text-align:center;
+        
+      }
+
+      .HomeButton a{
+        text-decoration: none;
+        color:black;
+      }
+
+      .jumbotron{
+        margin: 20px;
+        padding: 10px;
+        margin-left: 10%;
+        margin-right: 10%;
+        background-color: #dc3545;
+      }
+
+
+      .container{
+        margin-top: 20px;
+        padding-bottom: 60px;
+        }
+        
+      
+      .Sauce{
+        background-color: #ffc107;
+        width: 30%;
+        margin: 2.5%;
+        padding-bottom: 70px;
+      }
+
+      .dropdown{
+        margin-right: 300px;
+      }
+
+      .Topping{
+        background-color: #ffc107;
+        width: 30%;
+        margin: 2.5%;
+        padding-bottom: 70px;
+        position: relative;
+      }
+    </style>
+  
+  </head>
+<body>
+    <div class="HomeButton">
+      <h5><a href="index" alt="link to previous page">Back to Home</a></h5>
+    </div>
+    
+  
+    <div class="jumbotron text-center">
+        <h1>Welcome to Spin'N Stone!</h1>
+        <p>Pizza made to order!</p>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <section class="Sauce">
+                <h1>Select  Sauce</h1>
+                <div class="col-sm-4">
+        
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Sauce
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                          <button class="dropdown-item" type="button">Sauce 1</button>
+                          <button class="dropdown-item" type="button">Sauce 2</button>
+                          <button class="dropdown-item" type="button">Sauce 3</button>
+                        </div>
+                    </div>            
+                </div>
+            </section>
+            
+            <section class="Topping">
+                <h1>Select Topping</h1>
+            <div class="col-sm-4">
+    
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Sauce
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                      <button class="dropdown-item" type="button">Topping 1</button>
+                      <button class="dropdown-item" type="button">Topping 2</button>
+                      <button class="dropdown-item" type="button">Topping 3</button>
+                    </div>
+                </div>            
+            </div>
+            </section>       
+        </div>
+    </div>
+</body>
+</html>

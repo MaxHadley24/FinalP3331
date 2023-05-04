@@ -1,0 +1,50 @@
+SCRUM Meeting 2 for Omicron
+Prepared by: Will Whatley
+Meeting Date: 3/31/2023
+Meeting Attendees
+Max Hadley 
+Will Whatley
+Shicong Chu
+Yash Dalal
+Meeting Agenda Items
+Go around and ask 
+What did you do yesterday?
+What will you do today?
+Are there any impediments  
+Discuss ways to make our website dynamically reshape based on screen size 
+Vote on back-end tool presented by Yash 
+Status Update Since Last Meeting
+Accomplishments:
+Home page populated 
+Bootstrap demo present by Max
+
+Tasks Completed:
+Task Description
+Assigned to
+Completed? (yes/no)
+Home page populated
+Max Hadley
+yes
+Back-end tools chosen
+Yash
+yes
+
+Before The Next Meeting
+Plans:
+All need to familiarize with express.js app for full stack integration
+Transform current .html files to be compatible with .js files
+Continue working on sprint tasks 
+
+
+Task Assignments:
+Task Description
+Assigned to
+Create express.js app
+Yash Dalal
+Create page for orders and inventory
+Shicong Chu
+Transform current .html files to be compatible with .js files with the express.js framework 
+Max Hadley and Will Whatley
+
+Minutes from Previous Meeting
+In this meeting we discussed what frameworks we would be using for the project. For this project, we decided to use express.js which will allow us to work the frontend and the backend with java script. We consulted our TA to obtain advice regarding our tools choice. We also decided to continue working on our sprint goals and came to the conclusion that we should be able to meet our sprint goals. 

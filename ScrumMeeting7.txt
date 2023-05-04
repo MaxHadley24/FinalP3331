@@ -1,0 +1,105 @@
+SCRUM Meeting 7 for Omicron
+Prepared by: Will Whatley
+Meeting Date: 4/26/2023
+Meeting Attendees
+Max Hadley
+Yash Dalal
+Will Whatley
+Shicong Chu
+Meeting Agenda Items
+ Go around and ask 
+What did you do yesterday?
+What will you do today?
+Are there any roadblocks?   
+Review of the Sprint Goal and understand how to reach it 
+ Fully functional UI that integrates an AWS database with manager, server and customer side functionality
+Demo completed work 
+Identify areas of improvement and move them up in priority for the sprint 
+Status Update Since Last Meeting
+Accomplishments:
+Google OAuth implementation 
+Conduction of user studies 
+Manager trends pages are set up 
+Manager database input pages are set up 
+Discuss how to deploy on Render 
+
+Tasks Completed:
+Task Description
+Assigned to
+Completed? (yes/no)
+Google OAuth Implementation
+Will Whatley
+yes
+Conduction of user studies 
+All
+yes
+Manager trends pages are set up 
+Max Hadley
+yes
+Manager database input pages are set up 
+Shicong Chu
+yes
+
+Before The Next Meeting
+Plans:
+Bring together the back-end for the manager side and the UI 
+Login with authentication and security should be set-up to distinguish between manager and server 
+UI ordering should be fully functional 
+Manager analysis pages should be connected to the backend and shown as reports in the UI 
+Deployment of the application on Render
+
+Task Assignments:
+Task Description
+Assigned to
+Connect back-end database tables to web-site
+Yash Dalal
+I can login to the server side
+Will Whatley
+I can navigate to the cashier page
+Yash Dalal
+I can input customer orders
+Shicong Chu
+I can confirm and record all customer orders
+Will Whatley
+I can restart the current order
+Shicong Chu
+I can input my order
+Shicong Chu
+I can place an order and have it confirmed for pick-up
+Max Hadley
+I am able to restart my order
+Max Hadley
+I can translate the menu to my native language
+Will Whatley
+The website is resized to fit my device's screen.
+Shicong Chu
+I can change the page and keep the language and mode I'm using.
+Shicong Chu
+I can view the order history including the most recent entries.
+Yash Dalal
+I can adjust the stock manually
+Yash Dalal
+I can change the price of an item
+Yash Dalal
+I can view the Reports available in the trends page.
+Max Hadley
+I can view the current stock of all items.
+Shicong Chu
+I can add seasonal menu items
+Yash Dalal
+I can remove underperforming items
+Max Hadley
+I can generate an Excess Report
+Will Whatley
+I can generate a Z report
+Will Whatley
+I can generate a X report
+Will Whatley
+I can generate a sales report
+Will Whatley
+I can deploy website on render
+Max Hadley
+
+Minutes from Previous Meeting
+This is the minutes for the SCRUM Meeting 7 for Omicron, held on April 26, 2023. The attendees were Max Hadley, Yash Dalal, Will Whatley, and Shicong Chu. The meeting started with a go-around where each member shared what they did yesterday, what they plan to do today, and if there are any roadblocks. The team reviewed the sprint goal, which was to create a fully functional UI that integrates an AWS database with manager, server, and customer side functionality. The team then demoed their completed work and identified areas for improvement that need to be prioritized for the next sprint. The team discussed the progress made since the last meeting, which included Google OAuth implementation, conduction of user studies, and setting up the manager trends and database input pages. They also discussed how to deploy the application on Render. The team assigned tasks for the next sprint, which included connecting the back-end database tables to the website, setting up login authentication and security for managers and servers, making the UI ordering fully functional, and connecting the manager analysis pages to the backend and showing them as reports in the UI. Each team member was assigned specific tasks to complete, such as connecting the back-end database tables to the website for Yash Dalal, setting up login authentication and security for Will Whatley, and inputting customer orders for Shicong Chu. The meeting concluded with plans for the next sprint, including deploying the website on Render.
+

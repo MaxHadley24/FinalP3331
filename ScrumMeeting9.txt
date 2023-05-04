@@ -1,0 +1,76 @@
+SCRUM Meeting 9 for Omicron
+Prepared by: Will Whatley
+Meeting Date: 5/1/2023
+Meeting Attendees
+Max Hadley
+Yash Dalal
+Will Whatley
+Shicong Chu
+Meeting Agenda Items
+ Go around and ask 
+What did you do yesterday?
+What will you do today?
+Are there any roadblocks?   
+Review of the Sprint Goal and discuss if we’ve reached it 
+ Fully functional UI that integrates an AWS database with manager, server and customer side functionality
+Decide if there’s any other changes that need to be pushed to the front before final release 
+Demo ordering UI and identify potential bugs 
+Status Update Since Last Meeting
+Accomplishments:
+Ordering UI is fully complete
+Ordering UI will allow servers and customers to input orders and be recorded in order history 
+Dynamic resizing of website achieved  
+
+Tasks Completed:
+Task Description
+Assigned to
+Completed? (yes/no)
+I can navigate to the cashier page
+Yash Dalal
+yes
+I can input customer orders
+Shicong Chu
+yes
+I can confirm and record all customer orders
+Will Whatley
+yes
+I can restart the current order
+Shicong Chu
+yes
+I can input my order
+Shicong Chu
+yes
+I can place an order and have it confirmed for pick-up
+Max Hadley
+yes
+I am able to restart my order
+Max Hadley
+yes
+The website is resized to fit my device's screen.
+Shicong Chu
+yes
+I can remove underperforming items
+Max Hadley
+yes
+
+Before The Next Meeting
+Plans:
+Work on sprint 3 materials document 
+Work on sprint 3 retrospective document 
+Work on code documentation 
+Work on final presentation for release 
+
+Task Assignments:
+Task Description
+Assigned to
+Work on sprint 3 materials document 
+All
+Work on sprint 3 retrospective document 
+All
+Work on code documentation 
+All
+Work on final presentation for release 
+All
+
+Minutes from Previous Meeting
+SCRUM Meeting 9 for Omicron was held on May 1, 2023, and attendees included Max Hadley, Yash Dalal, Will Whatley, and Shicong Chu. The meeting began with the team going around and updating each other on what they did the previous day, what they planned to do that day, and any roadblocks they were facing. The next item on the agenda was a review of the sprint goal, which was to have a fully functional UI that integrates an AWS database with manager, server, and customer side functionality. The team discussed whether they had reached this goal and decided that they had. The team then discussed if there were any other changes that needed to be made before the final release. They also demoed the ordering UI and identified potential bugs that needed to be fixed. The status update since the last meeting included several accomplishments, such as the completion of the ordering UI, which will allow servers and customers to input orders and be recorded in order history. The team also achieved dynamic resizing of the website. Finally, the team reviewed the tasks completed since the last meeting, which included navigating to the cashier page, inputting customer orders, confirming and recording all customer orders, restarting the current order, inputting orders, placing orders, resizing the website to fit device screens, and removing underperforming items. The team then discussed plans for the next sprint, which included working on a materials document, a retrospective document, code documentation, and a final presentation for release. The tasks for these items were assigned to all team members.

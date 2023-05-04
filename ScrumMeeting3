@@ -1,0 +1,51 @@
+SCRUM Meeting 3 for Omicron
+Prepared by: Will Whatley
+Meeting Date: 4/3/2023
+Meeting Attendees
+Max Hadley 
+Will Whatley
+Shicong Chu
+Yash Dalal
+Meeting Agenda Items
+Go around and ask 
+What did you do yesterday?
+What will you do today?
+Are there any impediments  
+Decide if refactoring of project 2 code will  help project 3
+Discuss findings of connecting backend to frontend through express js
+Status Update Since Last Meeting
+Accomplishments:
+Creation of order and inventory pages
+File transformation to work with express.js
+
+Tasks Completed:
+Task Description
+Assigned to
+Completed? (yes/no)
+Order page created
+Shicong Chu
+yes
+Inventory page created
+Max Hadley
+yes
+
+Before The Next Meeting
+Plans:
+Begin functionality of pages with full stack interaction
+Work on navigation between pages 
+Brainstorm user feedback and acceptance tests
+
+Task Assignments:
+Task Description
+Assigned to
+Create page to allow manager to view login page 
+Will Whatley
+Menu page creation
+Shicong Chu
+Continue integration  of database in the backend to the frontend
+Yash Dalal
+Page Navigation
+Max Hadley
+
+Minutes from Previous Meeting
+In this meeting we continued discussing how we can integrate the postgresql database with the frontend framework. We then discussed how code refactoring from project 2 could help us in project 3. We ultimately decided that code from project 2 would serve as a guide, especially the DB queries for our project 3. For our next meeting we all need to come up with tests that will test our MVP for our users. 

@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    
+    <script id="translatescr" type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <title>My Menu</title>
+    <style>
+      /* Set the font size and family for the whole document */
+      body {
+        background-color: #198754;
+        margin-bottom: 7em;
+        padding-bottom: 7em;
+      }
+
+      .container {
+        margin: 20px auto;
+        max-width: 800px;
+        padding: 0 20px;
+      }
+
+      h1 {
+        font-size: 48pt;
+        text-align: center;
+        background-color: #dc3545;
+        margin-bottom: 1em;
+        color: white;
+        padding: 10px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 1em;
+      }
+
+      th {
+        background-color: #0074D9;
+        color: white;
+        font-weight: bold;
+        text-align: left;
+        padding: 0.5em 1em;
+        border: 1px solid #ddd;
+      }
+
+      td {
+        font-size: large;
+        border: 1px solid #ddd;
+        padding: 0.5em 1em;
+      }
+
+      tr {
+        background-color: #f2f2f2;
+      }
+
+      button {
+        background-color: #0074D9;
+        color: white;
+        font-size: 1.2em;
+        padding: 0.7em 2.5em;
+        border: none;
+        cursor: pointer;
+        border-radius: 10px;
+      }
+
+      footer {
+        text-align: center;
+        position: fixed;
+        justify-content: space-between;
+        font-size: 24;
+        color: aliceblue;
+        bottom: 0;
+        left: 0;
+        height: 5em;
+        background-color: #dc3546d7;
+        width: 100%;
+      }
+
+      #result {
+        margin-top: 0.5em;
+      }
+
+      #checkoutbutton{
+        font-size: xx-large;
+      }
+      .CartButton {
+        position: fixed;
+        align-self: last baseline;
+        width: 100px;
+        height: 80px;
+        padding: 10px;
+        margin-left: 15px;
+        border-radius: 10px;
+        text-align: center;
+      }
+
+      .CartButton a {
+        text-decoration: none;
+        color: black;
+      }
+
+      #result {
+        font-size: xx-large;
+      }
+
+      #CustomizeCheese,
+      #Customize1T,
+      #CustomizeBUO{
+        position: fixed;
+        display: none;
+        width: 60%;
+        height: 100%;
+        top: 0;
+        right: 20%;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 2;
+        cursor: pointer;
+      }
+
+      #text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        color: white;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+      }
+
+      .Sauce,
+      .Topping {
+        background-color: #ffc107;
+        width: calc(50% - 20px);
+        margin: 10px;
+        padding: 20px;
+        box-sizing: border-box;
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
+      }
+
+      .Sauce h2,
+      .Topping h2 {
+        margin-top: 0;
+      }
+
+      .Sauce ul,
+      .Topping ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .Sauce label,
+      .Topping label {
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      .Sauce input[type="checkbox"],
+      .Topping input[type="checkbox"] {
+        margin-right: 5px;
+      }
+
+      .Sauce input[type="checkbox"]:checked + label,
+      .Topping input[type="checkbox"]:checked + label {
+        font-weight: bold;
+      }
+
+      #cart {
+        position: fixed;
+        display: none;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        background-color: #fff;
+        z-index: 2;
+        cursor: pointer;
+        padding-left: 3em;
+        padding-right: 3em;
+        padding-top: 5em;
+      }
+
+      #text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        color: white;
+        transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+      }
+
+      .container{
+        margin-top: 20px;
+        padding-bottom: 60px;
+        }
+        
+      
+      .Sauce{
+        background-color: #ffc107;
+        width: 30%;
+        margin: 2.5%;
+        padding-bottom: 70px;
+      }
+
+      .dropdown{
+        margin-right: 300px;
+      }
+
+      .Topping{
+        background-color: #ffc107;
+        width: 30%;
+        margin: 2.5%;
+        padding-bottom: 70px;
+        position: relative;
+      }
+
+      
+    </style>
+
+    
+  </head>
+    <div class="CartButton">
+      <h5><button onclick="showCart()">Cart</button></h5>
+    </div>
+    <div id="cartContainer"></div>
+    
+  <body>
+    <h1>Menu   <div id="google_translate_element"></div>
+      <script id="translatescr" type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
+      </script> </h1>
+
+    <script>
+      const menu = <%- JSON.stringify(menu) %>;
+      
+      //create localSrtorage for each item
+      if (typeof(Storage) !== "undefined") {
+        for (i = 0; i< menu.length; i++){
+          localStorage.setItem(menu[i].item_id, 0);
+        }
+          localStorage.setItem("TotalPrice",0);
+      } else {
+        document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+      }
+
+      function clickCounter(value) {
+        if (typeof(Storage) !== "undefined") {
+          if (localStorage.clickcount) {
+            localStorage.setItem("TotalPrice", Number(localStorage.getItem("TotalPrice")) + value);
+          } else {
+            localStorage.clickcount = 0;
+          }
+          document.getElementById("result").innerHTML = "Total: $ " + parseFloat(Number(localStorage.getItem("TotalPrice"))).toFixed(2);
+        } else {
+          document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+        }
+      }
+      
+
+      function AddToCart(item_id){
+          if (typeof(Storage) !== "undefined") {
+            
+            localStorage.setItem(item_id, Number(localStorage.getItem(item_id)) + 1);
+            
+            // Get the toppings
+
+            var checkboxes = document.getElementsByName("topping"+item_id);
+            var toppings = [];
+            
+            for (var i = 0; i < checkboxes.length; i++) {
+              if (checkboxes[i].checked) {
+                toppings.push(checkboxes[i].value);
+              }
+            }
+
+            // Add the item and toppings to localStorage
+            // var item = {
+            //   'id': item_id,
+            //   'toppings': toppings
+            // };
+
+            localStorage.setItem("item_array"+item_id, JSON.stringify(toppings));
+            
+            
+            console.log("id: "+item_id+" , toppings: " + JSON.stringify(toppings));
+
+            document.getElementById('quantity'+item_id).value = Number(localStorage.getItem(item_id));
+            document.getElementById('topping'+item_id).innerHTML = JSON.parse((localStorage.getItem("item_array"+item_id))).join(", ");
+            document.getElementById('top'+item_id).value = JSON.parse((localStorage.getItem("item_array"+item_id))).join(", ") ;
+            toppings=[]
+            
+          } else {
+            document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+          }
+        }
+
+      function RemoveFromCart(item_id,value){
+        if (typeof(Storage) !== "undefined") {
+          if (localStorage.getItem(item_id)>0){
+            localStorage.setItem(item_id, Number(localStorage.getItem(item_id)) - 1);
+
+            localStorage.setItem("TotalPrice", Number(localStorage.getItem("TotalPrice")) - value);
+
+            document.getElementById("q"+item_id).innerHTML = localStorage.getItem(item_id);
+            document.getElementById('quantity'+item_id).value = Number(localStorage.getItem(item_id));
+            document.getElementById('topping'+item_id).innerText = JSON.parse((localStorage.getItem("item_array"+item_id))).join(", ");
+
+            document.getElementById('top'+item_id).value = JSON.parse((localStorage.getItem("item_array"+item_id))).join(", ");
+            
+            document.getElementById("result").innerHTML = "Total: $ " + parseFloat(Number(localStorage.getItem("TotalPrice"))).toFixed(2);
+          } else {
+            localStorage.setItem("item_array"+item_id, null);
+          }
+          console.log("id: "+item_id+" , quantity: " +  localStorage.getItem(item_id));
+        } else {
+          
+          document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+        }
+      }
+
+      
+      // function reset() {
+      //   if (typeof(Storage) !== "undefined") {
+      //     if (localStorage.getItem("TotalPrice")) {
+      //       localStorage.setItem("TotalPrice",0);
+            
+      //       for (i = 0; i< menu.length; i++){
+      //         localStorage.setItem(menu[i].item_id, 0);
+      //         localStorage.setItem("item_array"+item_id, null);
+      //       }
+
+      //     }
+      //     document.getElementById("result").innerHTML = "Total: $ " + localStorage.clickcount;
+      //     document.getElementById('topping'+item_id).innerText = String (localStorage.getItem("item_array"+item_id));
+      //   } else {
+      //     document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+      //   }
+      // }
+
+      function CustomizeCheese() {
+        document.getElementById("CustomizeCheese").style.display = "block";
+      }
+
+      function CustomizeOneTopping() {
+        document.getElementById("Customize1T").style.display = "block";
+      }
+
+      function CustomizeBuildYourOwn() {
+        document.getElementById("CustomizeBUO").style.display = "block";
+      }
+
+      function showCart() {
+        document.getElementById("cart").style.display = "block";
+        
+        for (i = 0; i< menu.length; i++){
+          if (localStorage.getItem(menu[i].item_id) <=0 ){
+            document.getElementById("ci"+menu[i].item_id).style.display = "none";
+          } else{
+            console.log("q"+menu[i].item_id);
+            document.getElementById("q"+menu[i].item_id).innerHTML = localStorage.getItem(menu[i].item_id);
+            document.getElementById("ci"+menu[i].item_id).style.display= "table-row";
+          }
+          
+        }
+      }
+
+      function off0() {
+        document.getElementById("CustomizeCheese").style.display = "none";
+      }
+
+      function off1() {
+        document.getElementById("Customize1T").style.display = "none";
+      }
+
+      function off2() {
+        document.getElementById("CustomizeBUO").style.display = "none";
+      }
+      
+      function closeCart() {
+        document.getElementById("cart").style.display = "none";
+      }
+
+      function replaceImg(img) {
+        img.src = 'https://media.discordapp.net/attachments/1071060022244691992/1102749071782981662/image.png?width=507&height=637';
+      }
+
+    </script>
+
+    <div class="table-container" style="padding: 0 3em;">
+      <table>
+        <!-- Define the table header -->
+        <thead>
+          <tr>
+            <!-- <th>Item ID</th> -->
+            <th>Item Name</th>
+            <th></th>
+            <th>Item Price</th>
+            <th></th> <!-- Add a new column for the button -->
+          </tr>
+        </thead>
+        
+        <!-- Define the table body -->
+        <tbody>
+          <!-- Loop over each item in the menu array -->
+          <% menu.forEach((item, index) => { %>
+            <!-- Define a table row for the current item -->
+            <tr style="background-color: <%= index % 2 === 0 ? '#ffffff' : '#f2f2f2' %>;">
+              <!-- Display the item ID in a table cell -->
+              <!-- <td><%= item.item_id %></td> -->
+              <!-- Display the item name in a table cell -->
+              <td><%= item.item_name %></td>
+              <!-- Display the item image in a table cell -->
+              <td><img src="/images/<%= item.item_name %>.jpg" alt="<%= item.item_name %>" onerror="replaceImg(this)" style="max-width: 200px; max-height: 200px;"></td>
+              <!-- Display the item price in a table cell -->
+              <td>$ <%= item.item_price %></td>
+              <!-- Define a button for the current item -->
+              <% if (item.item_name ===  "Cheese Pizza" ) { %>
+                <td><button onclick="CustomizeCheese();">Customize</button></td>
+              <% } else if (item.item_name === "1-Topping Pizza"){ %>
+                <td><button onclick="CustomizeOneTopping();">Customize</button></td>
+              <% } else if (item.item_name === "Build Your Own Pizza"){ %>
+                <td><button onclick="CustomizeBuildYourOwn();">Customize</button></td>
+              <% } else { %>
+                  <td><button class="button" onclick="clickCounter(Number(<%= item.item_price %>));AddToCart(String(<%= item.item_id %>))">Add to Cart</button></td>
+              <% }; %>
+            </tr>
+          <% }); %>
+            </tbody>
+      </table>
+    </div>
+    <div id="CustomizeCheese">
+      <div class="container">
+        <div class="row">
+          <section>
+            <h1>Select ingredient</h1>
+            <div class="table-responsive" style="height: 200px; overflow: auto;">
+              <table class="table">
+                <tbody>
+                  <% ingredients.forEach(ingredient => { %>
+                  <tr>
+                    <td>
+                      <input type="checkbox" name="topping1" value="<%= ingredient.ingredient_name %>">
+                    </td>
+                    <td>
+                      <%= ingredient.ingredient_name %>
+                    </td>
+                  </tr>
+                  <% }); %>
+                </tbody>
+              </table>
+            </div>
+          </form>
+        </section>
+      </div>   
+    </div>
+    <button onclick="off0();">Back</button>
+    <button onclick="clickCounter(6.45);AddToCart('1');off0();">Add to Cart</button>
+    </div>
+    
+
+        <div id="Customize1T">
+
+          <div class="container">
+            <div class="row">
+
+              <section>
+                <h1>Select ingredient</h1>
+                <div class="table-responsive" style="height: 200px; overflow: auto;">
+                  <table class="table">
+                    <tbody>
+                      <% ingredients.forEach(ingredient => { %>
+                      <tr>
+                        <td>
+                          <input type="checkbox" name="topping2" value="<%= ingredient.ingredient_name %>">
+                        </td>
+                        <td>
+                          <%= ingredient.ingredient_name %>
+                        </td>
+                      </tr>
+                      <% }); %>
+                    </tbody>
+                  </table>
+                </div>
+              </form>
+            </section>
+
+            </div>
+
+          </div>
+          <button onclick="off1();">Back</button>
+          <button onclick="clickCounter(7.49);AddToCart('2');off1();">Add to Cart</button>
+        </div>
+
+
+        <div id="CustomizeBUO">
+
+          <div class="container">
+            <div class="row">
+
+              <section>
+                <h1>Select ingredient</h1>
+                <div class="table-responsive" style="height: 200px; overflow: auto;">
+                  <table class="table">
+                    <tbody>
+                      <% ingredients.forEach(ingredient => { %>
+                      <tr>
+                        <td>
+                          <input type="checkbox" name="topping3" value="<%= ingredient.ingredient_name %>">
+                        </td>
+                        <td>
+                          <%= ingredient.ingredient_name %>
+                        </td>
+                      </tr>
+                      <% }); %>
+                    </tbody>
+                  </table>
+                </div>
+              </form>
+            </section>
+
+            </div>
+
+          </div>
+          <button onclick="off2();">Back</button>
+          <button onclick="clickCounter(8.85);AddToCart('3');off2();">Add to Cart</button>
+        </div>
+
+
+      
+    <!-- Define a table element to display the menu -->
+    
+    <p><button onclick="location.reload()" type="button">Cancel Order!</button></p>
+
+    
+    <div id="cart">  
+      <table>
+      <!-- Define the table header -->
+      <thead>
+        <tr>
+          <th>Item Name</th>
+          <th>Price Per Item</th>
+          <th>Quantity</th>
+          <th>Toppings</th>
+          <th></th> <!-- Add a new column for the button -->
+        </tr>
+      </thead>  
+
+      <tbody>
+        <% menu.forEach((item, index) => { %>
+        
+          <tr class="cartitem" id="ci<%= item.item_id %>">
+            <td><%= item.item_name %></td>
+            <td>$ <%= item.item_price %></td>
+            <td> <div id="q<%= item.item_id %>">  </div>   </td>
+            <td><div id="topping<%= item.item_id %>"></div></td>
+            <td><button onclick="RemoveFromCart(Number(<%= item.item_id %>),Number(<%= item.item_price %>))"> RemoveFromCart</button></td>
+          </tr>
+        
+        <% }); %>
+      </tbody>
+      </table>
+      <button onclick="closeCart()">Order More</button>
+      <br>
+      <br>
+      <form action="/user" method="POST">
+        <% menu.forEach((item, index) => { %>
+          <input type="hidden" name="itemIds" value="<%= item.item_id %>">
+          <input type="hidden" name="itemName" value="<%= item.item_name %>">
+          <input type="hidden" name="itemPrice" value="<%= item.item_price %>">
+          <input type="hidden" name="itemQuantity" id="quantity<%= item.item_id %>">
+          <input type="hidden" name="itemToppings" id="top<%= item.item_id %>">
+        <% }); %>
+        
+        <button type="submit" name="checkoutbtn"> Check Out</button>
+      </form>
+      
+    </div>
+
+  </body>
+
+  <footer>
+    <div class="row"> 
+      <div class="col" id="result"> Total: $ 0.00</div>  
+      <button id="checkoutbutton" class="col" onclick="showCart()"> CheckOut</button> 
+    </div>
+  </footer>
+</html>
